@@ -7,6 +7,7 @@ based situation in the program. The loops in Scala are :
 - **while Loop**
 - **do..while Loop** -> https://docs.scala-lang.org/scala3/reference/dropped-features/do-while.html
 - **for Loop**
+- **Break statement**
 - **Nested Loops**
 
 ### Technologies
@@ -14,4 +15,3 @@ based situation in the program. The loops in Scala are :
 - Java 17
 - Sbt 1.10.17
 - Scala 3.3.4
-

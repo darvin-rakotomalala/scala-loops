@@ -21,4 +21,11 @@ def main(): Unit =
   val doWhileLoop = new DoWhileLoopDemo()
   doWhileLoop.doWhileLoopExample()
 
+  println("-------------------")
+  val breakEx = new BreakStatement()
+  println("- Breakable example: ")
+  breakEx.breakDemo()
+  println("- Breakable class and break in nested loop example: ")
+  breakEx.breakNestedDemo()
+
 
