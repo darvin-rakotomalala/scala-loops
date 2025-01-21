@@ -1,21 +1,48 @@
 import do_while_loop.DoWhileLoopDemo
-import for_loop.ForLoopDemo
-import while_loop.WhileLoopDemo
+import for_loop.{ForEachDemo, ForLoopDemo, ForToDemo, ForToUntilDemo, ForUntilDemo, RangesDemo}
+import while_loop.{WhileLoopDemo, WhileTrueDemo}
 
 @main
 def main(): Unit =
   println("--------------------------------------------------------------------------------------")
   println("Hello world! This is an example of the Scala | Loops(while, do..while, for, nested loops)")
 
+  println("- While Loop examples: ")
   val whileLoop = new WhileLoopDemo()
   whileLoop.whileLoopExample()
   whileLoop.whileLoopTest()
+
+  val whileTrueEx = new WhileTrueDemo()
+  whileTrueEx.whileLoopExample()
+  whileTrueEx.whileTrueTest()
 
   println("-------------------")
 
   val forLoop = new ForLoopDemo()
   forLoop.forLoopExample()
   forLoop.forLoopTest()
+
+  println("-------------------")
+
+  println("- Use a for-each loop over all the elements in the list: ")
+  val forEachEx = new ForEachDemo()
+  forEachEx.forEachExample()
+
+  println("- Use a For to loop example: ")
+  val forToEx = new ForToDemo()
+  forToEx.forToExample()
+
+  println("- Use a For Until loop example: ")
+  val forUntilEx = new ForUntilDemo()
+  forUntilEx.forUntilExample()
+
+  println("- Use a For To and For Until loop example: ")
+  val forToUntilEx = new ForToUntilDemo()
+  forToUntilEx.forToUntilExample()
+
+  println("- Ranges example: ")
+  val rangeEx = new RangesDemo()
+  rangeEx.rangeExample()
 
   println("-------------------")
   val doWhileLoop = new DoWhileLoopDemo()
