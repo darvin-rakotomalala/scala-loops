@@ -1,5 +1,5 @@
 import do_while_loop.DoWhileLoopDemo
-import for_loop.{ForEachDemo, ForLoopDemo, ForToDemo, ForToUntilDemo, ForUntilDemo, RangesDemo}
+import for_loop.{ForEachDemo, ForLoopDemo, ForToDemo, ForToUntilDemo, ForUntilDemo, RangesDemo, YieldDemo}
 import while_loop.{WhileLoopDemo, WhileTrueDemo}
 
 @main
@@ -16,13 +16,13 @@ def main(): Unit =
   whileTrueEx.whileLoopExample()
   whileTrueEx.whileTrueTest()
 
-  println("-------------------")
+  println("-----------------------------")
 
   val forLoop = new ForLoopDemo()
   forLoop.forLoopExample()
   forLoop.forLoopTest()
 
-  println("-------------------")
+  println("-----------------------------")
 
   println("- Use a for-each loop over all the elements in the list: ")
   val forEachEx = new ForEachDemo()
@@ -44,15 +44,22 @@ def main(): Unit =
   val rangeEx = new RangesDemo()
   rangeEx.rangeExample()
 
-  println("-------------------")
+  println("-----------------------------")
   val doWhileLoop = new DoWhileLoopDemo()
   doWhileLoop.doWhileLoopExample()
 
-  println("-------------------")
+  println("-----------------------------")
   val breakEx = new BreakStatement()
   println("- Breakable example: ")
   breakEx.breakDemo()
   println("- Breakable class and break in nested loop example: ")
   breakEx.breakNestedDemo()
+
+  println("-----------------------------")
+  println("- Using yield with for example")
+  val yieldDemo = new YieldDemo()
+  yieldDemo.yieldExample()
+  println("- Yield Array example")
+  yieldDemo.yieldArrayExample()
 
 
